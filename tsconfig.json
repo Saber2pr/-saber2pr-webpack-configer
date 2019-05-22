@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
-    "declaration": true,
     "outDir": "./lib",
     "esModuleInterop": true,
     "lib": [
@@ -10,6 +9,6 @@
      "es2015"
     ]
   },
-  "include": ["src"],
+  "include": ["src", "index.d.ts"],
   "exclude": ["node_modules", "lib"]
 }

@@ -1,10 +1,10 @@
-import WebpackConfig from '..'
+import { WebpackConfig } from '..'
 
 export const config = WebpackConfig({
   mode: 'production',
   entry: './src/index.ts',
   resolve: {
-    extensions: ['.js', '.ts'],
+    extensions: ['.js', '.ts']
   },
   output: {
     filename: 'bundle-[hash].js',
