@@ -25,7 +25,7 @@ const CleanCSSPlugin = require('less-plugin-clean-css')
 
 const extractLess = new ExtractTextPlugin('style-[hash].css')
 
-import WebpackConfig from '@saber2pr/webpack-configer'
+import { WebpackConfig } from '@saber2pr/webpack-configer'
 
 // use declaration from @types/webpack
 module.exports = WebpackConfig({
