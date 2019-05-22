@@ -1,1 +1,1 @@
-export * from './core/webpack-configer'
+export { WebpackConfig as default } from './core/webpack-configer'

@@ -6,6 +6,6 @@
  */
 import webpack from 'webpack'
 
-export default function WebpackConfig(config: webpack.Configuration) {
+export function WebpackConfig(config: webpack.Configuration) {
   return config
 }
