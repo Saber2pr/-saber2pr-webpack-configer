@@ -1,4 +1,4 @@
-import { WebpackConfig } from '../core/webpack-configer'
+import WebpackConfig from '../core/webpack-configer'
 
 export const config = WebpackConfig({
   mode: 'production',
