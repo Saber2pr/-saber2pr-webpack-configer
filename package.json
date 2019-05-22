@@ -4,7 +4,7 @@
   "description": "> T^T how to config webpack use declaration?",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Saber2pr/-saber2pr-webpack-configer.git"
+    "url": "git+https://github.com/Saber2pr/webpack-configer.git"
   },
   "author": "saber2pr",
   "license": "ISC",

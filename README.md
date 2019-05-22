@@ -7,7 +7,7 @@
 npm install @saber2pr/webpack-configer
 
 # from github
-git clone https://github.com/Saber2pr/-saber2pr-webpack-configer.git
+git clone https://github.com/Saber2pr/webpack-configer.git
 ```
 
 # webpack.config.js
