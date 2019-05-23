@@ -14,29 +14,28 @@ git clone https://github.com/Saber2pr/webpack-configer.git
 
 > typescript(tsx) + less
 
-> [js | css] Hash + Minify
-
-> auto compile
+> auto compile, Minify
 
 ```js
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const CleanCSSPlugin = require('less-plugin-clean-css')
+const path = require('path')
 
-const extractLess = new ExtractTextPlugin('style-[hash].css')
+const extractLess = new ExtractTextPlugin('style.css')
 
-import { WebpackConfig } from '@saber2pr/webpack-configer'
+const { WebpackConfig } = require('@saber2pr/webpack-configer')
 
 // use declaration from @types/webpack
 module.exports = WebpackConfig({
-  mode: 'production',
-  entry: './src/index.ts',
+  mode: 'development',
+  entry: './src/index.tsx',
   resolve: {
-    extensions: ['.js', '.ts']
+    extensions: ['.js', '.ts', '.tsx']
   },
   output: {
-    filename: 'bundle-[hash].js',
-    path: `${process.cwd()}/build/bundle-[hash].js`
+    filename: 'bundle.js',
+    path: path.join(__dirname, 'build')
   },
   watchOptions: {
     aggregateTimeout: 300,
@@ -46,7 +45,7 @@ module.exports = WebpackConfig({
   module: {
     rules: [
       {
-        test: /\.ts$/,
+        test: /\.(ts|tsx)$/,
         use: ['ts-loader']
       },
       {
@@ -72,7 +71,7 @@ module.exports = WebpackConfig({
       }
     ]
   },
-  plugins: [new HtmlWebpackPlugin(), extractLess]
+  plugins: [new HtmlWebpackPlugin({}), extractLess]
 })
 ```
 
