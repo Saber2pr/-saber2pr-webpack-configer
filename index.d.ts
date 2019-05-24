@@ -7,4 +7,5 @@
 declare module '@saber2pr/webpack-configer' {
   import * as webpack from 'webpack'
   function WebpackConfig(config: webpack.Configuration): webpack.Configuration
+  const templateContent: string
 }

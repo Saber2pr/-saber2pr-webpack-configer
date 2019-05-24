@@ -1,4 +1,4 @@
-import { WebpackConfig } from '..'
+import { WebpackConfig , templateContent} from '..'
 
 export const config = WebpackConfig({
   mode: 'production',
