@@ -1,6 +1,6 @@
 {
   "name": "@saber2pr/webpack-configer",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "> T^T how to config webpack use declaration?",
   "repository": {
     "type": "git",
@@ -10,8 +10,7 @@
   "license": "ISC",
   "files": [
     "lib/core/*",
-    "lib/index.*",
-    "index.d.ts"
+    "lib/index.*"
   ],
   "main": "./lib/index.js",
   "scripts": {
