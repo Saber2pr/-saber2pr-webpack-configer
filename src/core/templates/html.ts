@@ -1,1 +1,5 @@
-export const templateContent = '<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Github</title></head><body></body></html>'
+export const templateContent = (
+  title: string = '',
+  injectBody: string = '<div id="root"></div>'
+) =>
+  `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>${title}</title></head><body>${injectBody}</body></html>`
