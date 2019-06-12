@@ -29,4 +29,9 @@ export const config = WebpackConfig({
   }
 })
 
-console.log(templateContent())
+console.log(
+  templateContent('+++', {
+    injectHead: '<link rel="stylesheet">',
+    injectBody: '<a>jsx</a>'
+  })
+)
